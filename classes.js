@@ -47,3 +47,49 @@ console.log(emp2.sayHello());
 Employee.info();
 
 console.log(emp1 instanceof Employee);
+
+console.log("========== Inheritance")
+class Manager extends Employee{
+    getDepartment(){
+        return this.department;
+    }
+    setDepartment(department){
+        this.department = department;
+    }
+
+    constructor(firstName, lastName, department){
+        super(firstName, lastName);
+        this.department = department;
+    }
+
+    sayHello(){
+        console.log(super.sayHello());
+        console.log("Department : "+this.department);
+    }
+}
+
+var emp3 = new Manager("Raphael", "Eugin", "S/W");
+emp3.sayHello();
+
+class Director extends Manager{
+     getFaculty(){
+         this.faculty;
+     }
+
+     setFaculty(faculty){
+         this.faculty = faculty;
+     }
+
+     constructor(firstName, lastName, department, faculty){
+         super(firstName, lastName, department);
+         this.faculty = faculty;
+     }
+
+     sayHello(){
+         super.sayHello();
+         console.log("Faculty "+this.faculty);
+     }
+}
+
+var emp4 = new Director("Jeep", "Durai", "CEO", "Engineering");
+emp4.sayHello();
