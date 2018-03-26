@@ -1,0 +1,20 @@
+Variables
+ var -> ECMA Script 5, 6 global
+ let -> ECMA Script 5 (has scope)
+// Have to be care full with JavaScript
+
+
+
+Literals
+Operators 
+// Don't use arithamatic in javascript
+// == (Equals to)  === (Equals and Type)
+Keywords
+
+
+
+
+Frameworks
+=================
+Angular JS - Dependence Injection(Manages object create), two way data binding
+Gulp - removes unwanted space.(creats minifi)
