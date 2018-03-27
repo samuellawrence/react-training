@@ -21,6 +21,7 @@ class Layout extends React.Component {
 
         this.setStateHandler = this.setStateHandler.bind(this);
         this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
+        
     }
 
     setStateHandler(){
