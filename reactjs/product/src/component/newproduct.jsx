@@ -15,6 +15,14 @@ class NewProduct extends React.Component{
         this.updateProductName = this.updateProductName.bind(this);
         this.updateProductDescription = this.updateProductDescription.bind(this);
         this.updatePrice = this.updatePrice.bind(this);
+        this.clearForm = this.clearForm.bind(this);
+    }
+
+    clearForm(){
+        this.setState({productName:""});
+        this.setState({productDescription:""});
+        this.setState({price:0});
+        ReactDOM.findDOMNode(this.refs.myProductName).focus();
     }
 
     findDomNodeHandler(){
@@ -55,7 +63,7 @@ class NewProduct extends React.Component{
         <div>
             <hr/>
                 Product Name:
-                <input type="text" value={this.state.productName} onChange={this.updateProductName}/>
+                <input type="text" value={this.state.productName} onChange={this.updateProductName} ref="myProductName"/>
                 <h4>{this.state.productName}</h4>
                 <br/>
                 Product Description:
@@ -70,6 +78,7 @@ class NewProduct extends React.Component{
                 <button onClick={this.props.stateHandler}>Add Product</button>
                 <button onClick={this.props.forceHandler}>Click here to refresh</button>
                 <button onClick={this.findDomNodeHandler}>Change color</button>
+                <button onClick={this.clearForm}>Clear Form</button>
                 <h4>Random Number: {Math.random()}</h4>
                 <div id="myDiv">Find Dom Node Handler</div>
             <hr/>
