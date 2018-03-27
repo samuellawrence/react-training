@@ -5,10 +5,12 @@ Installation
 1. Install node (https://nodejs.org/en/)
     * In javascript folder use node <filename> to execute file.
 2. Install all dependence package for react js
-npm install -g create-react-app
+    npm install -g create-react-app
 3. Create react project "product"
-create-react-app product
-
+    create-react-app product
+4. To start the project type
+    npm start
+    
 
 Manually creating react js
 1. create a directory
