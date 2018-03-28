@@ -14,8 +14,8 @@ class Menu extends React.Component{
 
                         <ul className="nav navbar-nav">
                             <li className="active"><a href="/">Home</a></li>
-                            <li><a href="/">Customers</a></li>
-                            <li><a href="/">Products</a></li>
+                            <li><a href="/customers">Customers</a></li>
+                            <li><a href="/products">Products</a></li>
                         </ul>
                     </div>
                 </nav>

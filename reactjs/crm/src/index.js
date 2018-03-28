@@ -20,6 +20,7 @@ class RouteMapping extends React.Component{
                         <div className="container">
                             <Route path="/" exact component={Dashboard}/>
                             <Route path="/customers" exact component={Customers}/>
+                            <Route path="/customers/:id" exact component={Customers}/>
                             <Route path="/products" exact component={Products}/>
                         </div>
                     <Footer />

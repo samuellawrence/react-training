@@ -6,3 +6,9 @@ npm install react-router-dom --save
 
 #To start the project
 npm start
+
+#To create dispatcher
+npm install flux --save
+
+#Animation Plugin
+rpm install react-addons-css-transition-group --save
