@@ -1,4 +1,9 @@
 import {createStore} from 'redux'
+import Layout from './component/Layout'
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+ReactDOM.render(<Layout />, document.getElementById('root'));
 
 const reducer = function (state=[], action){
     if(action.type === "ADDCUSTOMER"){
