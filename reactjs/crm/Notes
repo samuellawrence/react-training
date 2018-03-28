@@ -1,0 +1,8 @@
+#Install react router
+npm install react-router --save
+
+#Install react router dom
+npm install react-router-dom --save
+
+#To start the project
+npm start
